@@ -127,7 +127,7 @@ img {
 /************************************************
     SOLUZIONE RESPONSIVE
  ************************************************/
- /* DESKTOP FIRST  */
+ /* DESKTOP FIRST
  
     @media screen and (max-width: 1140px) {
         .container {
@@ -164,7 +164,7 @@ img {
             color: #fffffe;
         }
 
-        /* LESSONS SECTION */
+        /* LESSONS SECTION
         .row {
             display: flex;
             flex-wrap: wrap;
@@ -195,7 +195,7 @@ img {
             font-size: 1.5rem;
         }
 
-        /* STEPS SECTION */
+        /* STEPS SECTION 
 
         .steps {
             margin: 3rem 0;
@@ -219,7 +219,7 @@ img {
         }
 
 
-        /* WHY US SECTION */
+        /* WHY US SECTION 
         .why-us {
             margin-bottom: 3rem;
         }
@@ -243,3 +243,51 @@ img {
 
 
     }
+     */
+
+     /* CODE OPTIMIZED */
+
+     /* DESKTOP FIRST */
+
+     @media screen and (min-width: 769px) {
+        .container {
+            width: 100%;
+            margin: 0 auto;
+        }
+     }
+
+     /* TABLET */
+
+     @media screen and (max-width: 768px) {
+        .container{
+            max-width: 100%;
+        }
+     }
+
+     /* MOBILE */
+ 
+     @media screen and (max-width: 480px) {
+        .row{
+            flex-direction: column;
+        }
+
+        .why-us .col, .steps .col, .lessons .col{
+            width: 100%;
+            margin-bottom: 4rem;
+        }
+
+        .why-us .col:last-child, .steps .col:last-child, .lessons .col:last-child{
+            margin-bottom: 0px;
+        }
+
+        .why-us{
+            background-color: #222222;
+            padding-top: 50px;
+            margin-bottom: 0px;
+        }
+
+        .steps{
+            margin-bottom: 0px;
+        }
+
+     }
